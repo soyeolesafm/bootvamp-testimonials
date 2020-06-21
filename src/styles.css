@@ -1,0 +1,12 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+.slideShow-testimonial {
+  margin: 5% 5% 2% 2%;
+}
