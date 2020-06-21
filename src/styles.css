@@ -1,12 +1,42 @@
-body {
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  text-align: justify;
-}
-.img-responsive {
-  width: 100%;
+.photo{
+
+  width: 150px%;
   height: auto;
 }
-.slideShow-testimonial {
-  margin: 5% 5% 2% 2%;
+.testimonial{
+  
+}
+
+.author{}
+.container{
+
+  font-size: 25px;
+ 
+  width: 5%;
+  background: White;
+  /*cdoe*/
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-gap: 10px 20px ;
+  
+}
+@media only screen and (min-width: 768px){
+  .photo{
+    width: 100%;
+    height: auto;
+  }
+  .testimonial{}
+  .author{}
+  .container{
+      margin:15% 0%;
+      font-size: 35px;
+      min-height:300px;
+      with: 100%;
+      backgorund: black;
+      display; grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-row:1fr 1fr 
+  }
+
 }
