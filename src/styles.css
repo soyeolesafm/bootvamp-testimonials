@@ -71,17 +71,18 @@ body {
 }
 .controls button > img {
   background-color: white;
+  transform: translateY(-30%);
 }
 .controls button {
   border: none;
   background-color: #fff;
 }
-/* .next {
- 
+#next {
+  float: right;
 }
-.prev {
- 
-} */
+#prev {
+  float: left;
+}
 .picture {
   padding-left: 10px;
   grid-column: 3 / span 11;
