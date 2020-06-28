@@ -17,6 +17,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 2rem;
   font-weight: 300;
+  letter-spacing: 0.01rem;
   color: var (--dark-blue);
   background-color: rgba(255, 255, 255);
 }
@@ -37,10 +38,18 @@ body {
 }
 
 .credentials {
+  font-size: 1.75rem;
   justify-content: center;
   text-align: center;
   grid-column: 2 / span 10;
   grid-row: 7;
+}
+.testimonial-name{
+  font-weight: 700;
+}
+#light-text{
+color: var(--grayish-blue);  
+
 }
 .pattern-quotes {
   padding-left: 35px;
@@ -59,7 +68,7 @@ body {
   height: 10px;
   border-radius: 27px;
   justify-content: stretch;
-  /* align-content: center; */
+  box-shadow: 0 1.5px 1px rgba(0,0,0,.1);
   border: none;
   cursor: pointer;
 
@@ -89,11 +98,15 @@ body {
   grid-row: 2 / 4;
   align-self: center;
   justify-self: center;
+ 
 }
+
 
 #picture {
   width: 78%;
   z-index: 1;
+  box-shadow: 1px 20px 45px 0px hsl(240, 18%, 77%),
+  0px 10px 20px 0px hsl(240, 18%, 77%);
 }
 
 .pattern-bg {
@@ -117,15 +130,50 @@ body {
 
 @media only screen and (min-width: 768px) {
   .container {
-    grid-template-columns: 2 fr;
-    grid-template-rows: 1 fr;
-    grid-template-areas: 'l r';
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 94px);
+    
   }
   .testimonial {
-    grid-area: l;
-    padding: 5%;
+  grid-column: 2 / span 6;  
+  grid-row: 3 / 5;
+  z-index: 10;
   }
   .picture {
-    grid-area: r;
+    grid-column: 7 / span 11;
+    grid-row: 2 / 7;
+    
   }
+  #picture{
+    width: 85%;
+  }
+  .pattern-bg {
+    grid-column: 7 / span 10;
+    grid-row: 1 / 6 ;
+    width: 95%;
+    margin-top: 25px;
+    
+    
+  }
+  .credentials{
+      grid-column: 1 / span 4;
+      grid-row: 6;
+  }
+  .pattern-quotes{
+    grid-column: 2 / span 3;
+    grid-row: 3;
+  }
+  .controls {
+    grid-column: 7 / span 8;
+    grid-row: 7;
+    width: 7%;
+
+    margin-left: 85px;
+    margin-top: -25px;
+  }
+  .pattern-curve{
+    grid-column: 1 / span 5;
+    grid-row: 7 / 8;
+  }
+
 }
