@@ -13,6 +13,10 @@ html {
   height: 100%;
   font-size: 62.5%;
 }
+footer {
+  font-size: 60%;
+  text-align: center;
+}
 body {
   font-family: 'Inter', sans-serif;
   font-size: 2rem;
@@ -129,15 +133,23 @@ color: var(--grayish-blue);
 }
 
 @media only screen and (min-width: 768px) {
+  body{
+    font-size: 2.5rem;
+  }
   .container {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(8, 94px);
     
   }
+
   .testimonial {
-  grid-column: 2 / span 6;  
+  grid-column: 2 / span 7;  
   grid-row: 3 / 5;
   z-index: 10;
+  text-align: left;
+  letter-spacing: 0.25rem;
+  width: 81%;
+  margin-left: 60px;
   }
   .picture {
     grid-column: 7 / span 11;
@@ -156,13 +168,32 @@ color: var(--grayish-blue);
     
   }
   .credentials{
-      grid-column: 1 / span 4;
-      grid-row: 6;
+      grid-column: 2 / span 4;
+      grid-row: 5;
+      justify-content: left;
+      margin-left: 6rem;
+      margin-top: 40px;
   }
+  .testimonial-name{
+    float: left;
+  }
+  .testimonial-career{
+    float: left;
+    margin-left: 1rem;
+  }
+
   .pattern-quotes{
-    grid-column: 2 / span 3;
-    grid-row: 3;
+    grid-column: 3 / span 3;
+    grid-row: 2;
+    margin-left: 2rem;
+    margin-top: 75px;
+   
   }
+  .pattern-quotes img {
+    width: 30%;
+    
+  }
+  
   .controls {
     grid-column: 7 / span 8;
     grid-row: 7;
