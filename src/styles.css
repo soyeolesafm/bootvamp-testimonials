@@ -97,9 +97,7 @@ html{
   font-weight: 300;
   display: block;
 }
-.slide2{
-  display: none;
-}
+
 
 
 footer{
@@ -117,6 +115,7 @@ footer{
   
 }
 .buttons{
+  text-align: center;
   z-index: 3;
   position: absolute;
   cursor: pointer;
@@ -131,11 +130,74 @@ footer{
   background-color: white;
   overflow: hidden;
   align-items: center;
-  justify-items: center;
+  text-justify: distribute;
 }
 .prev{
-  left: 0px;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.05rem;
+  
 }
 .next{
-  padding-block-end: .9rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.05rem;
+  
+}
+@media only screen and (min-width:760px){
+  .container{
+   margin-left: 100px;
+  }
+  
+  .slide{
+    flex-direction: row;
+    position: relative;
+   
+  }
+  .slide-picture{
+    position: relative;
+    right: 0.5rem;
+    margin-left: 450px;
+  }
+  .slide-picture img{
+    width: 320px;
+  }
+  .slide-testimonial{
+    left: 0.6rem;
+    width: 55%;
+    height: auto;
+    justify-content: left;
+    text-align: left;
+    position: absolute;
+    z-index: 5;
+    margin-left: 50px;
+    margin-top: 90px;
+  }
+  .pattern-bg{
+    width: 50%;
+    margin-left: 200px;
+    margin-top: 0rem;
+  }
+  .testimonial-author{
+   
+    display: flex;
+    position: absolute;
+    margin-top: 5.5rem;
+    left: 0rem;
+  }
+  .testimonial-author span{
+    margin-left: .25rem;
+  }
+  .buttons{
+    left: 65%;
+    top: 330px;
+  }
+  .quote{
+    margin-top: -1.5rem;
+    margin-left: -3.8rem;
+  }
+
+}
+.slide2{
+  display: none;
 }
