@@ -21,7 +21,7 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 27px;
   flex-direction: column;
 }
 .slide-tracker{
