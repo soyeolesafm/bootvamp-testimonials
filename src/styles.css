@@ -196,8 +196,8 @@ footer{
     margin-top: -1.5rem;
     margin-left: -3.8rem;
   }
-
-}
-.slide2{
-  display: none;
+  .pattern-curve{
+    width: 40%;
+    
+  }
 }
