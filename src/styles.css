@@ -147,6 +147,7 @@ footer{
 @media only screen and (min-width:760px){
   .container{
    margin-left: 100px;
+   width: max-content;
   }
   
   .slide{
